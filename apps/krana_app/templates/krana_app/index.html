@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Shopping Site" >
+	<title>Krana | College Community</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	{% load staticfiles %}
+	<script type="text/javascript" src="{% static 'krana_app/js/b_audio.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'krana_app/css/content.css' %}">
+    <link rel="stylesheet" href="{% static 'krana_app/css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'krana_app/css/audio.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+</head>
+<body background="{% static 'krana_app/img/background2.gif' %}">
+
+	<div class="wrapper_top">
+		<div class="nav_bar">
+
+				<div class="logo">
+					<img src="{% static 'krana_app/img/alien2.png' %}">
+				</div>
+
+				<div class="nav_top">
+					<h1>Krana Community</h1>
+					<a href="/login">Login</a>
+					<p>|</p>
+					<a href="/login">Register</span></a>
+
+					<div class="audio">
+
+						<img src="{% static 'krana_app/img/alien_headphones.png' %}">
+						<img id="img" src="{% static 'krana_app/img/speaker.gif' %}">
+						<audio id="audio1" controls="controls" autoplay hidden>
+							Your browser does not support the HTML5 Audio Tag.
+						</audio>
+
+
+					</div>
+					<h3><i>...Students with interest in UFO/Aliens</i></h3>
+					
+					<table class="menu-bar">
+
+						<tr>
+							
+							<td><a href="">Home<span style="font-size: 8px;">>>></span></a></td>
+							<td><a href="">Forum<span style="font-size: 8px;">>></span></a></td>
+							<td><a href="">Research<span style="font-size: 8px;">>></span></a></td>
+							<td><a href="">Store<span style="font-size: 8px;">>></span></a></td>
+							<td><a href="">About<span style="font-size: 8px;">>></span></a></td>
+
+						</tr>
+
+						
+					</table>
+
+				</div>
+				
+
+
+		</div>
+
+	
+
+
+	</div>
+
+		<div class="content1">
+			<div class="left">
+			<div id="nasa_video"></div>
+			<script>
+			// 2. This code loads the IFrame Player API code asynchronously.
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			// 3. This function creates an <iframe> (and YouTube player)
+			//    after the API code downloads.
+			var player;
+			function onYouTubeIframeAPIReady() {
+			player = new YT.Player('nasa_video', {
+			height: '150',
+			width: '310',
+			videoId: 'qzMQza8xZCc',
+			events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+			}
+			});
+
+			player2 = new YT.Player('nasa_video2', {
+			height: '140',
+			width: '275',
+			videoId: 'ddFvjfvPnqk',
+			events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+			}
+			});
+
+			}
+			// 4. The API will call this function when the video player is ready.
+			function onPlayerReady(event) {
+			event.target.setVolume(0);
+			event.target.playVideo();
+			}
+			// 5. The API calls this function when the player's state changes.
+			//    The function indicates that when playing a video (state=1),
+			//    the player should play for six seconds and then stop.
+			var done = false;
+			function onPlayerStateChange(event) {
+			if (event.data == YT.PlayerState.PLAYING && !done) {
+			//      setTimeout(stopVideo, 6000);
+			  done = true;
+			}
+			event.target.setVolume(0);
+			}
+			</script>
+			
+			</div>
+
+			<div class="middle">
+				
+
+				
+			</div>
+
+			<div class="right">
+				
+			<div id="nasa_video2"></div>
+				
+				
+			</div>
+		</div>
+
+		
+	<footer class="footer">
+			
+			<table class="footer_table">
+
+						<tr>
+							<td></td>
+							<td><a href="">SiteMap</a></td>
+							<td><a href="">Contact Us</a></td>
+							<td><a href="#Top">Top of page</span></a></td>
+
+						</tr>
+
+						
+			</table>
+	
+
+	</footer>
+
+
+
+</body>
+</html>

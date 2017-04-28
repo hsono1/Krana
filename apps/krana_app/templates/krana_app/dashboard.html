@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Shopping Site" >
+	<title>Krana | College Community</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script async src="https://www.youtube.com/iframe_api"></script>
+	{% load staticfiles %}
+	<script type="text/javascript" src="{% static 'krana_app/js/b_audio.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'krana_app/css/content.css' %}">
+    <link rel="stylesheet" href="{% static 'krana_app/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'krana_app/css/dashboard.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'krana_app/css/audio.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+</head>
+<body background="{% static 'krana_app/img/background2.gif' %}">
+
+	<div class="wrapper_top">
+		<div class="nav_bar">
+
+				<div class="logo">
+					<img src="{% static 'krana_app/img/alien2.png' %}">
+				</div>
+
+				<div class="nav_top">
+					<h1>Krana Community</h1>
+					<a href="{% url 'login_app:logout'  %}">Logout</a>
+
+					<div class="audio">
+
+						<img src="{% static 'krana_app/img/alien_headphones.png' %}">
+						<img id="img" src="{% static 'krana_app/img/speaker.gif' %}">
+						<audio id="audio1" controls="controls" autoplay hidden>
+							Your browser does not support the HTML5 Audio Tag.
+						</audio>
+
+
+					</div>
+					<h3><i>...Students with interest in UFO/Aliens</i></h3>
+					
+					<table class="menu-bar">
+
+						<tr>
+							
+							<td><a href="{% url 'login_app:logout'  %}">Home<span style="font-size: 8px;">>>></span></a></td>
+							<td><a href="">Forum<span style="font-size: 8px;">>></span></a></td>
+							<td><a href="">Research<span style="font-size: 8px;">>></span></a></td>
+							<td><a href="">Store<span style="font-size: 8px;">>></span></a></td>
+							<td><a href="">About<span style="font-size: 8px;">>></span></a></td>
+
+						</tr>
+
+						
+					</table>
+
+				</div>
+				
+
+
+		</div>
+
+	
+
+
+	</div>
+
+
+			<div class="left_dashboard">
+				<form method="post" action="">
+				<button type="submit">Create a Tutorial</button>
+				</form>
+				<form>
+				<select>
+					<option>My Tutorials</option>
+					<option>Python</option>
+
+				</select>
+				</form>
+			
+
+			</div>
+
+			<div class="middle_dashboard">
+				
+
+				
+			</div>
+
+			<div class="right_dashboard">
+				
+
+				
+			</div>
+
+
+		
+	<footer class="footer">
+			
+			<table class="footer_table">
+
+						<tr>
+							<td></td>
+							<td><a href="">SiteMap</a></td>
+							<td><a href="">Contact Us</a></td>
+							<td><a href="#Top">Top of page</span></a></td>
+
+						</tr>
+
+						
+			</table>
+	
+
+	</footer>
+
+
+
+</body>
+</html>

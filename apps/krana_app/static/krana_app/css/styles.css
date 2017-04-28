@@ -1,0 +1,204 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{  
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.wrapper_top
+{
+	height: 230px;
+	width: 1360px;
+	border-radius: 20px;
+	background: linear-gradient(purple, blueviolet, purple);
+	margin: 25px;
+	margin-left: 35px;
+	padding:10px;
+
+}
+
+.nav_bar
+{
+	width: 100%;
+	height: 200px;
+	border-radius: 20px;
+}
+
+.logo
+{
+	width: 300px;
+	height: 100%;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+.logo img
+{
+	width: 200px;
+	height: 200px;
+	margin-left: 50px;
+}
+
+.nav_top{
+
+	width: 1050px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 20px;
+	vertical-align: top;
+	margin-top: 30px;
+}
+
+.nav_top h1
+{
+	display: inline-block;
+	font-size: 60px;
+	font-family: 'Supermercado One', cursive;
+	margin-right: 200px;
+}
+.nav_top h3
+{
+	display: block;
+	text-indent: 100px;
+}
+.nav_top a, p{
+
+	display: inline-block;
+	font-size: 17px;
+	color: white;
+
+}
+
+.nav_top p
+{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.nav_top a
+{
+	text-decoration: none;
+}
+
+.nav_bar_2
+{
+	margin-top: 10px;
+}
+
+h3
+{
+	color: white;
+}
+
+.menu-bar
+{
+	background: linear-gradient( blueviolet, indigo);
+	display: block;
+	width: 700px;
+	height: 40px;
+	border-radius: 20px;
+	margin-top: 20px;
+
+}
+
+.menu-bar td
+{
+	line-height: 30px;
+	text-align: center;
+	width: 120px;
+	color: white;
+	font-family: arial;
+	font-size: 12px;
+	border-right: solid 1px grey;
+
+}
+
+.menu-bar a
+{
+	text-decoration: none;
+	color: white;
+
+
+}
+
+
+.audio
+{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.audio img
+{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+
+.content
+{
+	height: 700px;
+	width: 1360px;
+	border-radius: 20px;
+	margin: 25px;
+	margin-left: 35px;
+
+
+
+}
+
+.footer
+{
+	height: 50px;
+	width: 1360px;
+	border-radius: 20px;
+	background: linear-gradient(purple, blueviolet, purple);
+	margin: 25px;
+	margin-left: 35px;
+	padding:10px;
+
+}
+
+.footer_table
+{
+	display: block;
+	width: 700px;
+	height: 40px;
+	border-radius: 20px;
+	margin-left: 330px;
+
+}
+
+.footer_table td
+{
+	line-height: 30px;
+	text-align: center;
+	width: 120px;
+	color: white;
+	font-family: arial;
+	font-size: 12px;
+	border-right: solid 1px grey;
+}
+
+.footer_table a
+{
+	text-decoration: none;
+	color: white;
+
+}
+
+
+
+
+
+

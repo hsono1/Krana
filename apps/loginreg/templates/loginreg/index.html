@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Shopping Site" >
+  <title>Krana | College Community</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  {% load staticfiles %}
+  <script type="text/javascript" src="{% static 'krana_app/js/b_audio.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'krana_app/css/content.css' %}">
+    <link rel="stylesheet" href="{% static 'krana_app/css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'krana_app/css/audio.css' %}"/>
+    <link rel="stylesheet" href="{% static 'loginreg/css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+</head>
+<body background="{% static 'krana_app/img/background2.gif' %}">
+
+  <div class="wrapper_top">
+    <div class="nav_bar">
+
+        <div class="logo">
+          <img src="{% static 'krana_app/img/alien2.png' %}">
+        </div>
+
+        <div class="nav_top">
+          <h1>Krana Community</h1>
+          
+          <div class="audio">
+
+            <img src="{% static 'krana_app/img/alien_headphones.png' %}">
+            <img id="img" src="{% static 'krana_app/img/speaker.gif' %}">
+            <audio id="audio1" controls="controls" autoplay hidden>
+              Your browser does not support the HTML5 Audio Tag.
+            </audio>
+
+
+          </div>
+          <h3><i>...Students with interest in UFO/Aliens</i></h3>
+          
+          <table class="menu-bar">
+
+            <tr>
+              
+              <td><a href="/">Home<span style="font-size: 8px;">>>></span></a></td>
+              <td><a href="">Forum<span style="font-size: 8px;">>></span></a></td>
+              <td><a href="">Research<span style="font-size: 8px;">>></span></a></td>
+              <td><a href="">Store<span style="font-size: 8px;">>></span></a></td>
+              <td><a href="">About<span style="font-size: 8px;">>></span></a></td>
+
+            </tr>
+
+            
+          </table>
+
+        </div>
+        
+
+
+    </div>
+
+  
+
+
+  </div>
+
+  <div class="content1">
+    <div class="login_left">
+
+        {% if messages %}
+          <ul>
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        <form action="{% url 'login_app:register' %}" method="post">
+            {% csrf_token %}
+            <h2>Please register:</h2>
+            <p>First Name:</p> <input type="text" name="first_name">
+            <p>Last Name:</p> <input type="text" name="last_name">
+            <p>E-mail address:</p> <input type="text" name="email">
+            <p>Password:</p> <input type="password" name="password">
+            <p>Confirm Password:</p> <input type="password" name="confirm">
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+
+
+    <div class="login_right">
+      
+            <form action="{% url 'login_app:login' %}" method="post">
+            {% csrf_token %}
+            <h2>Login:</h2>
+            <p>E-mail address:</p> <input type="text" name="email">
+            <p>Password:</p> <input type="password" name="password">
+            <button type="submit">Login</button>
+            </form>
+
+
+    </div>
+  </div>
+
+    
+  <footer class="footer">
+      
+      <table class="footer_table">
+
+            <tr>
+              <td></td>
+              <td><a href="">SiteMap</a></td>
+              <td><a href="">Contact Us</a></td>
+              <td><a href="#Top">Top of page</span></a></td>
+
+            </tr>
+
+            
+      </table>
+  
+
+  </footer>
+
+
+
+</body>
+</html>

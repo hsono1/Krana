@@ -1,0 +1,99 @@
+.nav_top h1
+{
+	display: inline-block;
+	font-size: 60px;
+	font-family: 'Supermercado One', cursive;
+	margin-right: 250px;
+}
+
+
+.left_dashboard
+{
+	height: 700px;
+	width: 300px;
+	background-color: yellow;
+	display: inline-block;
+	border-radius: 20px;
+	margin-left: 35px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 10px;
+	vertical-align: top;
+}
+
+
+.middle_dashboard
+{
+
+	height: 700px;
+	width: 800px;
+	background-color: yellow;
+	display: inline-block;
+	border-radius: 20px;
+	margin-left: 25px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 10px;
+	vertical-align: top;
+
+
+
+}
+
+
+.right_dashboard
+{
+
+	height: 700px;
+	width: 165px;
+	background-color: yellow;
+	display: inline-block;
+	border-radius: 20px;
+	margin-left: 25px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 10px;
+	vertical-align: top;
+
+
+
+}
+
+
+button, select
+{
+	display: block;
+	margin-top: 10px;
+	background-color: grey;
+	color: white;
+	border-radius: 1px;
+	box-shadow: 5px 5px 5px black;
+	margin-top: 20px;
+	margin-left: 20px;
+	background: linear-gradient( blueviolet, indigo);
+	width: 250px;
+	height: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+

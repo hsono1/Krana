@@ -1,0 +1,89 @@
+.content1
+{
+	width: 1500px;
+	height: 760px;
+}
+
+.left
+{
+	height: 700px;
+	width: 330px;
+	background-color: yellow;
+	display: inline-block;
+	border-radius: 20px;
+	margin-left: 35px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 10px;
+	vertical-align: top;
+
+}
+
+
+.middle
+{
+	height: 700px;
+	width: 630px;
+	background-color: red;
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+	border-radius: 20px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 10px;
+}
+
+.right
+{
+	height: 700px;
+	width: 290px;
+	background-color: grey;
+	display: inline-block;
+	border-radius: 20px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 10px;
+	vertical-align: top;
+
+}
+
+
+.login_left
+{
+	height: 700px;
+	width: 580px;
+	display: inline-block;
+	border-radius: 20px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 20px;
+	margin-left: 70px;
+	margin-right: 60px;
+	vertical-align: top;
+
+
+}
+
+.login_right
+{
+	height: 700px;
+	width: 580px;
+	display: inline-block;
+	border-radius: 20px;
+	background: linear-gradient(purple, blueviolet, purple);
+	padding: 20px;
+	vertical-align: top;
+
+
+}
+
+.youtube1
+{
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#nasa_video, #nasa_video2
+{
+	margin-left: 10px;
+}
+
+
